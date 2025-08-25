@@ -41,7 +41,7 @@ class ModelTrainer:
             
             print(model_report)
             
-            print('\n====================================================================================\n')
+            print('\n============================================================\n')
             
             logging.info(f'Model Report : {model_report}')
 
@@ -55,7 +55,7 @@ class ModelTrainer:
             best_model = models[best_model_name]
 
             print(f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
-            print('\n====================================================================================\n')
+            print('\n============================================================\n')
             
             logging.info(f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
 
