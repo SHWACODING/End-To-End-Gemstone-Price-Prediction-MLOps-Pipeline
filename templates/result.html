@@ -4,50 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemstone Price Prediction</title>
+    <title>Gemstone Price Prediction - Result</title>
     <style>
-        /* Reset some defaults */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #1a1a2e, #16213e);
-            color: #eee;
-            line-height: 1.6;
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            margin: 0;
         }
 
-        .container {
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.05);
+        .result-container {
+            background: rgba(255, 255, 255, 0.08);
             padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            width: 450px;
             text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
             animation: fadeIn 1.2s ease-in-out;
         }
 
-        h1 {
-            font-size: 2.5rem;
+        h2 {
             margin-bottom: 20px;
-            background: linear-gradient(to right, #ff8a00, #e52e71);
+            font-size: 2rem;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
+        .prediction-value {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            background: linear-gradient(45deg, #ff8a00, #e52e71);
+            box-shadow: 0 5px 20px rgba(229, 46, 113, 0.6);
+            margin: 20px 0;
+        }
+
         p {
-            font-size: 1.1rem;
-            margin-bottom: 25px;
             color: #ccc;
+            margin-bottom: 20px;
         }
 
         .btn {
@@ -67,12 +69,6 @@
             box-shadow: 0 5px 20px rgba(229, 46, 113, 0.6);
         }
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -88,17 +84,16 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>💎 Gemstone Price Prediction</h1>
-        <p>
-            This project is an <strong>End-to-End Machine Learning Pipeline</strong> for predicting gemstone prices.
-            It covers everything from project setup, Git, Docker, and modular coding
-            to MLOps tools like MLFlow, DVC, Airflow, and deployment.
-        </p>
-        <a href="/predict" class="btn">Let's Try 💎</a>
-        <footer>
-            © 2025 Gemstone AI Project
-        </footer>
+    <div class="result-container">
+        <h2>🔮 Prediction Result</h2>
+        <p>The estimated gemstone price is:</p>
+
+        <!-- Flask/Jinja placeholder for the prediction -->
+        <div class="prediction-value">
+            {{ final_result }} USD
+        </div>
+
+        <a href="/predict" class="btn">🔙 Predict Another</a>
     </div>
 </body>
 
