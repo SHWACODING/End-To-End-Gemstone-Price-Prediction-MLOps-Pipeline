@@ -37,16 +37,8 @@ git status
 git commit -m "Initialize DVC"
 ```
 
-```bash
-dvc add artifacts/raw.csv
-
-git add artifacts/raw.csv.dvc .gitignore
-
-git commit -m "Track raw dataset with DVC"
-```
+### Create a dvc.yaml File and Add Your Code Then
 
 ```bash
-dvc remote add -d remote_storage dvcstore
-
-dvc push
+dvc repro
 ```
