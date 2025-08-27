@@ -16,6 +16,14 @@ python template.py
 bash init_setup.sh
 ```
 
+## Run The Flask App To Predict Gemstone Price
+
+```bash
+python app.py
+```
+
+[Local Host](http://localhost:8000)
+
 ## How To Migrate Data Version Control DVC
 
 ```bash
