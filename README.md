@@ -15,3 +15,30 @@ python template.py
 ```bash
 bash init_setup.sh
 ```
+
+## How To Migrate Data Version Control DVC
+
+```bash
+dvc init
+
+git status
+# new file:   .dvc/.gitignore
+# new file:   .dvc/config
+# new file:   .dvcignore
+
+git commit -m "Initialize DVC"
+```
+
+```bash
+dvc add artifacts/raw.csv
+
+git add artifacts/raw.csv.dvc .gitignore
+
+git commit -m "Track raw dataset with DVC"
+```
+
+```bash
+dvc remote add -d remote_storage dvcstore
+
+dvc push
+```

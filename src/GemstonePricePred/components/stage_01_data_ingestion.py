@@ -55,7 +55,3 @@ class DataIngestion:
             logging.error("Error during Data Ingestion", exc_info=True)
             raise customexception(e, sys)
 
-
-if __name__ == "__main__":
-    DI = DataIngestion()
-    DI.initiate_data_ingestion()
