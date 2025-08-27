@@ -2,6 +2,7 @@ import os
 import sys
 import pickle
 import numpy as np
+import pandas as pd
 import mlflow
 import mlflow.sklearn
 from urllib.parse import urlparse

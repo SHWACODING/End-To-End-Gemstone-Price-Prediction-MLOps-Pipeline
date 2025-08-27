@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Artifical%20Intelligence%20World/08.%20AI%20Operations/2.%20MLOps/Workshops/YouTube/INeuron%20Intelligence/End-To-End-Gemstone-Price-Prediction-MLOps-Pipeline/mlruns/0/models/m-7bc902b271754709ba047122bf7994a7/artifacts
+creation_timestamp: 1756328858214
+experiment_id: '0'
+last_updated_timestamp: 1756328956443
+model_id: m-7bc902b271754709ba047122bf7994a7
+model_type: null
+name: model
+source_run_id: bfae2c75196b43f28616242de6e3c9bc
+status: 2
+status_message: null

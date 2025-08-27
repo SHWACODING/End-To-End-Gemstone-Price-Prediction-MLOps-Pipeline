@@ -42,3 +42,15 @@ git commit -m "Initialize DVC"
 ```bash
 dvc repro
 ```
+
+```bash
+dvc remote add -d myremote dvcstore
+```
+
+```bash
+dvc push
+```
+
+```bash
+dvc dag
+```
